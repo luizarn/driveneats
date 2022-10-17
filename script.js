@@ -1,11 +1,8 @@
 // variaveis globais
-let nomeprato;
-let nomebebida;
-let nomesobremesa;
-let valorprato;
-let valorbebida;
-let valorsobremesa;
-let valortotal;
+let pratoescolhido, bebidaescolhida, sobremesaescolhida;
+let valorcomida, valorbebida, valorsobremesa;
+let total = 0;
+
 
 
 // funcoes para selecionar o prato
@@ -22,7 +19,12 @@ function selecionarPrato(elemento1){
   if(comparar !== null){
     comparar.classList.remove("presente")
   }
+  const nomeprato = document.querySelector(".selecionadoprato > p")
+  pratoescolhido = nomeprato.innerHTML;
 
+  const valordoprato = document.querySelector(".valorpago1")
+  valorcomida = valordoprato.innerHTML;
+ 
 ativarbotao();
 }
 
@@ -40,7 +42,12 @@ function selecionarBebida(elemento2){
   if(comparar !== null){
     comparar.classList.remove("presente")
   }
+  const nomebebida = document.querySelector(".selecionadobebida > p")
+  bebidaescolhida = nomebebida.innerHTML;
 
+  const valordrink = document.querySelector(".valorpago2")
+  valorbebida = valordrink.innerHTML;
+ 
   ativarbotao();
 }
 
@@ -58,6 +65,11 @@ function selecionarSobremesa(elemento3){
   if(comparar !== null){
     comparar.classList.remove("presente")
   }
+  const nomesobremesa = document.querySelector(".selecionadosobremesa > p")
+  sobremesaescolhida = nomesobremesa.innerHTML;
+
+  const valorsobr = document.querySelector(".valorpago3")
+  valorsobremesa = valorsobr.innerHTML;
   ativarbotao();
 }
 
@@ -71,4 +83,19 @@ if (prato !== null && bebida !== null && sobremesa !== null){
   botaofinalizar.classList.remove("botao");
   botaofinalizar.classList.add("botaofinalizado");
 }
+}
+
+function deliveryMessage() {
+  const option1 = valorcomida.replace(',','.');
+  const option2 = valorbebida.replace(',','.');
+  const option3 = valorsobremesa.replace(',', '.');
+  //Convertendo para número e fazendo a soma
+  total = Number(option1) + Number(option2) + Number(option3);
+  total = Number(valorcomida) + Number(valorbebida) + Number(valorsobremesa)
+  
+
+  let str = `Olá, gostaria de fazer o pedido:\n - Prato: ${pratoescolhido} \n - Bebida: ${bebidaescolhida} \n - Sobremesa: ${sobremesaescolhida} \n Total:R$${total.toFixed(2)} `;
+    str = encodeURIComponent(str);
+    window.open("https://wa.me/5561985202952?text=" + str);
+  
 }

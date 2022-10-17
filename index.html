@@ -26,28 +26,28 @@
       <img src="./imagens/pfeito.jpeg"/>
         <p>Bife Acebolado</p>    
         <h3>Um pouco de batata e arroz e feijão</h3>
-        <h4>R$ 14,90</h4>
+        <h4>R$<span class="valorpago1">14,90</span></h4>
      </div>
      <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/hamburguer.jpeg"/>
         <p>X-tudo Gourmet</p>    
         <h3>Cada ingrediente na medida certa</h3>
-        <h4>R$ 25,90</h4>
+        <h4>R$<span class="valorpago1">25,90</span></h4>
      </div>
      <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/hotdog.jpeg"/>
         <p>Dogão Delícia</p>    
         <h3>Simples e eficiente</h3>
-        <h4>R$ 14,90</h4>
+        <h4>R$<span class="valorpago1">14,90</span></h4>
      </div>
      <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/sushi.jpeg"/>
         <p>Sushi 20 peças</p>    
         <h3>Contém couve crspy e cream cheese</h3>
-        <h4>R$ 43,90</h4>
+        <h4>R$<span class="valorpago1">43,90</span></h4>
      </div>
         </div>
     </div>
@@ -62,28 +62,28 @@
                 <img src="./imagens/coca.jpeg"/>
                 <p>Coquinha gelada</p>    
                 <h3>Lata 450ml</h3>
-                <h4>R$ 5,90</h4>
+                <h4> <span class="valorpago2">R$ 5,90</span> </h4>
              </div>
              <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/jesus.jpeg"/>
                 <p>Guaraná Jesus nota 1000</p>    
                 <h3>Lata 350ml</h3>
-                <h4>R$ 4,90</h4>
+                <h4>R$<span class="valorpago2">4,90</span></h4>
              </div>
              <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/pepsi.jpeg"/>
                 <p>Pepsi com muito gás</p>    
                 <h3>Lata 350ml</h3>
-                <h4>R$ 4,90</h4>
+                <h4>R$<span class="valorpago2">4,90</span></h4>
              </div>
              <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/mineiro.jpeg"/>
                 <p>Guaraná Mineiro bom demais sô</p>    
                 <h3>Lata 450ml</h3>
-                <h4>R$ 5,90</h4>
+                <h4>R$<span class="valorpago2">5,90</span></h4>
              </div>
                 </div>
                 <!--fim das opcoes bebidas-->       
@@ -98,28 +98,28 @@
                 <img src="./imagens/pudim.jpeg"/>
                 <p>Pudim</p>    
                 <h3>Apenas pudim</h3>
-                <h4>R$ 7,90</h4>
+                <h4>R$<span class="valorpago3">7,90</span></h4>
              </div>
              <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/petit.jpeg"/>
                 <p>Petit Gateau</p>    
                 <h3>Acompanhado com sorvete</h3>
-                <h4>R$ 12,90</h4>
+                <h4>R$<span class="valorpago3">12,90</span></h4>
              </div>
              <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/torta.jpeg"/>
                 <p>Torta Alemã</p>    
                 <h3>Super recheada</h3>
-                <h4>R$ 5,90</h4>
+                <h4>R$ <span class="valorpago3">5,90</span></h4>
              </div>
              <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/quindim.jpeg"/>
                 <p>Quindin</p>    
                 <h3>1 unidade do tamanho ideal</h3>
-                <h4>R$ 5,90</h4>
+                <h4>R$ <span class="valorpago3">6,90</span></h4>
              </div>
                 </div>
                 <!--fim das opcoes sobremesas--> 
@@ -128,12 +128,10 @@
         </div>
         <!--fim do container principal-->
         <div class="selecao">
-         <div>
-            <button class="botao">
+            <button onclick="deliveryMessage()" class="botao">
                <p>Selecione os 3 itens</p>
                <p>para fechar o pedido</p>
             </button>    
-         </div>  
             </div>
 <script src="script.js"></script</script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
