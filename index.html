@@ -20,29 +20,29 @@
         <h2>Primeiro, seu prato</h2>
         <div class="container">
         <!--incio das opcoes pratos-->
-        <div class="opcoes" data-test="dishes">   
-     <div class="opcao" onclick="selecionarPrato(this)" data-test="food-option">
+        <div class="opcoes prato" data-test="dishes">   
+     <div class="opcaoprato" onclick="selecionarPrato(this)" data-test="food-option">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
       <img src="./imagens/pfeito.jpeg"/>
         <p>Bife Acebolado</p>    
         <h3>Um pouco de batata e arroz e feijão</h3>
         <h4>R$ 14,90</h4>
      </div>
-     <div class="opcao" onclick="selecionarPrato(this)">
+     <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/hamburguer.jpeg"/>
         <p>X-tudo Gourmet</p>    
         <h3>Cada ingrediente na medida certa</h3>
         <h4>R$ 25,90</h4>
      </div>
-     <div class="opcao" onclick="selecionarPrato(this)">
+     <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/hotdog.jpeg"/>
         <p>Dogão Delícia</p>    
         <h3>Simples e eficiente</h3>
         <h4>R$ 14,90</h4>
      </div>
-     <div class="opcao" onclick="selecionarPrato(this)">
+     <div class="opcaoprato" onclick="selecionarPrato(this)">
       <ion-icon id="icon" class="check" name="checkmark-circle"></ion-icon>  
         <img src="./imagens/sushi.jpeg"/>
         <p>Sushi 20 peças</p>    
@@ -55,30 +55,30 @@
         
         <h2>Agora, sua bebida</h2>
         <div class="container"> 
-        <div class="opcoes" data-test="drinks">
+        <div class="opcoes bebida" data-test="drinks">
             <!--inicio opcoes bebidas-->
-            <div class="opcao" onclick="selecionarBebida(this)" data-test="food-option">
+            <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/coca.jpeg"/>
                 <p>Coquinha gelada</p>    
                 <h3>Lata 450ml</h3>
                 <h4>R$ 5,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarBebida(this)" data-test="food-option">
+             <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/jesus.jpeg"/>
                 <p>Guaraná Jesus nota 1000</p>    
                 <h3>Lata 350ml</h3>
                 <h4>R$ 4,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarBebida(this)" data-test="food-option">
+             <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/pepsi.jpeg"/>
                 <p>Pepsi com muito gás</p>    
                 <h3>Lata 350ml</h3>
                 <h4>R$ 4,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarBebida(this)" data-test="food-option">
+             <div class="opcaobebida" onclick="selecionarBebida(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/mineiro.jpeg"/>
                 <p>Guaraná Mineiro bom demais sô</p>    
@@ -91,30 +91,30 @@
     
         <h2>Por fim, sua sobremesa</h2>
         <div class="container">
-        <div class="opcoes" data-test="desserts">
+        <div class="opcoes sobremesa" data-test="desserts">
             <!--inicio opcoes sobremesas-->
-            <div class="opcao" onclick="selecionarSobremesa(this)" data-test="food-option">
+            <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/pudim.jpeg"/>
                 <p>Pudim</p>    
                 <h3>Apenas pudim</h3>
                 <h4>R$ 7,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarSobremesa(this)" data-test="food-option">
+             <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/petit.jpeg"/>
                 <p>Petit Gateau</p>    
                 <h3>Acompanhado com sorvete</h3>
                 <h4>R$ 12,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarSobremesa(this)" data-test="food-option">
+             <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/torta.jpeg"/>
                 <p>Torta Alemã</p>    
                 <h3>Super recheada</h3>
                 <h4>R$ 5,90</h4>
              </div>
-             <div class="opcao" onclick="selecionarSobremesa(this)" data-test="food-option">
+             <div class="opcaosobremesa" onclick="selecionarSobremesa(this)" data-test="food-option">
                <ion-icon class="check" name="checkmark-circle"></ion-icon>
                 <img src="./imagens/quindim.jpeg"/>
                 <p>Quindin</p>    
@@ -128,10 +128,12 @@
         </div>
         <!--fim do container principal-->
         <div class="selecao">
-            <div class="botao">
-                <p>Selecione os 3 itens</p>
-                <p>para fechar o pedido</p>
-             </div>      
+         <div>
+            <button class="botao">
+               <p>Selecione os 3 itens</p>
+               <p>para fechar o pedido</p>
+            </button>    
+         </div>  
             </div>
 <script src="script.js"></script</script>
 <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
